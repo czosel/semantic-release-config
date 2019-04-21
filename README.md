@@ -19,7 +19,17 @@ Add the following to the `extends` property of your [semantic release configurat
 }
 ```
 
-This repo also contains [commitlint](https://github.com/conventional-changelog/commitlint) which checks that commit messagesas are formatted according to the [conventional commit format](https://www.conventionalcommits.org). Set up a pre-commit hook to integrate it; e.g. by installing [husky](https://github.com/typicode/husky):
+This repo also contains [commitlint](https://github.com/conventional-changelog/commitlint). Configure it to check that commit messagesas are formatted according to the [conventional commit format](https://www.conventionalcommits.org) by adding the following to `package.json`:
+
+```json
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+```
+
+Set up a pre-commit hook to integrate it; e.g. by installing [husky](https://github.com/typicode/husky):
 
 ```bash
 yarn add husky --dev
