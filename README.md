@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/%40adfinis-sygroup%2Fsemantic-release-config.svg)](https://badge.fury.io/js/%40adfinis-sygroup%2Fsemantic-release-config)
+
 # semantic-release-config
 
 Sharable configuration for [semantic release](https://semantic-release.gitbook.io).
